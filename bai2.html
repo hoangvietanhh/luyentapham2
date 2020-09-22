@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Tinh chu vi hinh tron: <input type="text" id="chuvi" oninput="chuvi(this.value)" onchange="chuvi(this.value)" placeholder="Nhap ban kinh">
+<p>Chu vi: <span id="outputChuvi"></span></p>
+Tinh dien tich hinh tron: <input type="text" id="dientich" oninput="dientich(this.value)" onchange="dientich(this.value)" placeholder="Nhap ban kinh">
+<p>Dien tich: <span id="outputDientich"></span></p>
+
+</body>
+</html>
+<script>
+    function chuvi(n) {
+        n = parseFloat(n);
+        document.getElementById("outputChuvi").innerHTML = 2 * n * Math.PI;
+    }
+
+    function dientich(a){
+        a = parseFloat(a);
+        document.getElementById('outputDientich').innerHTML = a * a * Math.PI;
+    }
+</script>
